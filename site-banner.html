@@ -1,0 +1,46 @@
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
+<h1>before content</h1>
+
+<div class="slider custom-radhe-slider">
+  <div><img src="http://watchexplor.com/images/new_banner.jpg" alt=""></div>
+  <div><img src="http://watchexplor.com/images/new_banner.jpg" alt=""></div>
+  <div><img src="http://watchexplor.com/images/new_banner.jpg" alt=""></div>
+  <div><img src="http://watchexplor.com/images/new_banner.jpg" alt=""></div>
+  <div><img src="http://watchexplor.com/images/new_banner.jpg" alt=""></div>
+  <div><img src="http://watchexplor.com/images/new_banner.jpg" alt=""></div>
+</div>
+
+<h1>after content</h1>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+	$(".slider").slick({
+    autoplay:true,
+    infinite: true,
+    autoplaySpeed:5000,
+    pauseOnHover:false
+  })
+</script>
+
+<style>
+  .custom-radhe-slider
+  {
+    max-height: 420px;
+  }
+  .custom-radhe-slider img
+  {
+    width: 100%;
+  }
+
+  @media (max-width: 768px)
+  {
+    .custom-radhe-slider
+    {
+      display: none;
+    }
+  }
+</style>
